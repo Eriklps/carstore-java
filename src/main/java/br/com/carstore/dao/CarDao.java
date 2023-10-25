@@ -20,20 +20,20 @@ public class CarDao {
 
             Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa","sa");
 
-            System.out.println("success in database connection");
+            System.out.println("Success in database connection");
 
             PreparedStatement preparedStatement = connection.prepareStatement(SQL);
 
             preparedStatement.setString(1, car.getName());
             preparedStatement.execute();
 
-            System.out.println("success in insert car");
+            System.out.println("Success in insert car");
 
             connection.close();
 
         } catch (Exception e) {
 
-            System.out.println("fail in database connection");
+            System.out.println("Fail in database connection");
 
         }
 
@@ -47,7 +47,7 @@ public class CarDao {
 
             Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa", "sa");
 
-            System.out.println("success in database connection");
+            System.out.println("Success in database connection");
 
             PreparedStatement preparedStatement = connection.prepareStatement(SQL);
 
@@ -66,7 +66,7 @@ public class CarDao {
 
             }
 
-            System.out.println("success in select * car");
+            System.out.println("Success in select * car");
 
             connection.close();
 
@@ -74,7 +74,7 @@ public class CarDao {
 
         } catch (Exception e) {
 
-            System.out.println("fail in database connection");
+            System.out.println("Fail in database connection");
 
             return Collections.emptyList();
 
@@ -90,19 +90,19 @@ public class CarDao {
 
             Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa", "sa");
 
-            System.out.println("success in database connection");
+            System.out.println("Success in database connection");
 
             PreparedStatement preparedStatement = connection.prepareStatement(SQL);
             preparedStatement.setString(1, carId);
             preparedStatement.execute();
 
-            System.out.println("success on delete car with id: " + carId);
+            System.out.println("Success on delete car with id: " + carId);
 
             connection.close();
 
         } catch (Exception e) {
 
-            System.out.println("fail in database connection");
+            System.out.println("Fail in database connection");
 
         }
 
@@ -116,7 +116,7 @@ public class CarDao {
 
             Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa","sa");
 
-            System.out.println("success in database connection");
+            System.out.println("Success in database connection");
 
             PreparedStatement preparedStatement = connection.prepareStatement(SQL);
 
@@ -124,13 +124,13 @@ public class CarDao {
             preparedStatement.setString(2, car.getId());
             preparedStatement.execute();
 
-            System.out.println("success in update car");
+            System.out.println("Success in update car");
 
             connection.close();
 
         } catch (Exception e) {
 
-            System.out.println("fail in database connection");
+            System.out.println("Fail in database connection");
             System.out.println("Error: " + e.getMessage());
 
         }
