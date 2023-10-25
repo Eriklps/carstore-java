@@ -25,7 +25,7 @@ public class CarDao {
             preparedStatement.setString(1, car.getName());
             preparedStatement.execute();
 
-            System.out.println("Success in insert car");
+            System.out.println("Car inserted successfully");
 
             connection.close();
 
@@ -62,7 +62,7 @@ public class CarDao {
 
             }
 
-            System.out.println("Success in select * car");
+            System.out.println("Car selected successfully");
 
             connection.close();
 
@@ -116,7 +116,7 @@ public class CarDao {
             preparedStatement.setString(2, car.getId());
             preparedStatement.execute();
 
-            System.out.println("Success in update car");
+            System.out.println("Car updated successfully");
 
             connection.close();
 
