@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+    <meta http-equiv="Content-type" content="text/html" charset=UTF-8>
+    <link href="webjars/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
     <title>Login</title>
 </head>
 <body>
 
-    <form action="/login" method="post">
+    <form action="/login" method="post" class="container">
 
         <span>${requestScope.message}</span>
 
