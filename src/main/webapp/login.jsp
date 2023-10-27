@@ -7,8 +7,7 @@
     <title>Login</title>
 </head>
 <body class="bg-body-tertiary py-4">
-
-    <form action="/login" method="post" class="container">
+    <form action="/login" method="post" class="container w-25">
 
         <span>${requestScope.message}</span>
 
@@ -27,6 +26,5 @@
         </div>
 
     </form>
-
 </body>
 </html>

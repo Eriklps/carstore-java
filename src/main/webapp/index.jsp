@@ -8,7 +8,7 @@
 
 <body class="py-4">
 
-<form action="/create" method="post" enctype="multipart/form-data" class="container">
+<form action="/create" method="post" enctype="multipart/form-data" class="container w-50">
 
     <h2>Create Car</h2>
 
