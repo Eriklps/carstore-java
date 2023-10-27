@@ -7,7 +7,7 @@
     <title>Login</title>
 </head>
 <body class="bg-body-tertiary py-4">
-    <form action="/login" method="post" class="container w-25">
+    <form style="max-width:400px;" action="/login" method="post" class="container">
 
         <span>${requestScope.message}</span>
 
