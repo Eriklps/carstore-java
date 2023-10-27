@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html data-bs-theme="light">
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <head>
     <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
@@ -7,7 +7,7 @@
     <link href="webjars/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
     <title>Dashboard</title>
 </head>
-<body class="py-4">
+<body class="bg-body-tertiary py-4">
   <div class="container">
     <c:if test="${sessionScope.loggedUser != null}">
         <span>${sessionScope.loggedUser}</span>

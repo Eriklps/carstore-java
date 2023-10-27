@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="light">
 <head>
     <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
     <meta http-equiv="Content-type" content="text/html" charset=UTF-8>
     <link href="webjars/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
     <title>Login</title>
 </head>
-<body class="py-4">
+<body class="bg-body-tertiary py-4">
 
     <form action="/login" method="post" class="container">
 
