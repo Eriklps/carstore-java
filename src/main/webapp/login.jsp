@@ -6,23 +6,25 @@
     <link href="webjars/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
     <title>Login</title>
 </head>
-<body>
+<body class="py-4">
 
     <form action="/login" method="post" class="container">
 
         <span>${requestScope.message}</span>
 
-        <br>
+        <div class="mb-3">
+            <label for="username" class="form-label">Username</label>
+            <input type="text" id="username" name="username" class="form-control">
+        </div>
 
-        <label for="username">Username</label>
-        <input type="text" id="username" name="username">
+        <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" id="password" name="password" class="form-control">
+        </div>
 
-        <br>
-
-        <label for="password">Password</label>
-        <input type="password" id="password" name="password">
-
-        <button type="submit">Login</button>
+        <div class="d-grid gap-2 col-6 mx-auto py-4">
+            <button type="submit" class="btn btn-primary">Login</button>
+        </div>
 
     </form>
 

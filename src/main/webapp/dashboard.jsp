@@ -7,7 +7,7 @@
     <link href="webjars/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
     <title>Dashboard</title>
 </head>
-<body>
+<body class="py-4">
   <div class="container">
     <c:if test="${sessionScope.loggedUser != null}">
         <span>${sessionScope.loggedUser}</span>
@@ -30,9 +30,9 @@
                     <td>
                         <form action="/delete-car" method="post">
                             <input type="hidden" id="id" name="id" value="${car.id}">
-                            <button type="submit">Delete</button>
+                            <button type="submit" class="btn btn-danger">Delete</button>
                             <span> | </span>
-                            <a href="index.jsp?id=${car.id}&name=${car.name}">Update</a>
+                            <a class="btn btn-primary" href="index.jsp?id=${car.id}&name=${car.name}">Update</a>
                         </form>
                     </td>
                 </c:if>
