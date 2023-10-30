@@ -11,9 +11,9 @@
 
     <title>Dashboard | Dashboard</title>
 </head>
-<body class="bg-body-tertiary">
+<body class="body">
 
-   <header class="navbar sticky-top flex-md-nowrap p-0 bg-light shadow">
+   <header class="navbar sticky-top flex-md-nowrap p-0 bg-body shadow">
         <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6" href="#">CarStore</a>
     		<button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
     			<span class="navbar-toggler-icon"></span>
@@ -30,7 +30,7 @@
 
     <div class="row">
 
-    <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+    <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-body sidebar collapse">
 
     				<div class="position-sticky pt-3 sidebar-sticky">
 
