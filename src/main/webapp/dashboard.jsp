@@ -71,7 +71,7 @@
 
     <div class="table-responsive">
 
-    	<table class="table table-striped table-sm">
+    	<table class="table  table-sm">
         <tr>
             <th>ID</th>
             <th>Name</th>

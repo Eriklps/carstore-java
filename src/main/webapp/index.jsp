@@ -20,11 +20,9 @@
     		<input class="form-control form-control-dark w-100 rounded-0 border-0" type="text" placeholder="Search" aria-label="Search">
     		<div class="navbar-nav">
     			<div class="nav-item text-nowrap">
-    			<a class="nav-link px-3" href="/logout">Sign out</a>
+    			    <a class="nav-link px-3" href="/logout">Sign out</a>
+                </div>
             </div>
-
-
-        </div>
 </header>
 
   <div class="container-fluid">
@@ -76,8 +74,6 @@
         <input class="form-control" type="text" name="car-name" id="car-name" value="${param.name}">
     </div>
 
-    <%--
-
     <div class="mb-3">
         <label class="form-label" for="brand">Brand</label>
         <input class="form-control" type="text" name="brand" id="brand">
@@ -97,8 +93,6 @@
         <label class="form-label" for="year-model">Model Year</label>
         <input class="form-control" type="text" name="year-model" id="year-model">
     </div>
-
-    --%>
 
     <div class="mb-3">
         <label class="form-label" for="image">Image</label>
