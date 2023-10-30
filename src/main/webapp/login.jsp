@@ -21,16 +21,15 @@
 
         <h1 class="h3 mb-3 fw-normal">Sign in</h1>
 
-        <span>${requestScope.message}</span>
 
-        <div class="mb-3">
-            <label for="username" class="form-label">Username</label>
-            <input type="text" id="username" name="username" class="form-control">
-        </div>
 
-        <div class="mb-3">
-            <label for="password" class="form-label">Password</label>
-            <input type="password" id="password" name="password" class="form-control">
+        <div class="form-floating">
+            <input type="text" name="username" class="form-control" id="floatingInput" placeholder="Username">
+            <label for="floatingInput">Username</label>
+       </div>
+        <div class="form-floating">
+            <input type="password" name="password" class="form-control" id="floatingPassword" placeholder="Password">
+            <label for="floatingPassword">Password</label>
         </div>
 
         <div class="form-check text-start my-3">
@@ -39,6 +38,10 @@
         </div>
 
         <button class="btn btn-primary w-100 py-2" type="submit">Sign in</button>
+
+        <div class="text-center my-3">
+        <span>${requestScope.message}</span>
+        </div>
 
     </form>
 
