@@ -4,10 +4,22 @@
     <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
     <meta http-equiv="Content-type" content="text/html" charset=UTF-8>
     <link href="webjars/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
-    <title>Login</title>
+
+    <link href="http://localhost:8080/webjars/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="https://getbootstrap.com/docs/5.3/examples/sign-in/sign-in.css" rel="stylesheet">
+
+    <title>Car Store | Login</title>
 </head>
-<body class="bg-body-tertiary py-4">
-    <form style="max-width:400px;" action="/login" method="post" class="container">
+
+<body class="d-flex align-items-center py-4 bg-body-tertiary">
+
+    <main class="form-signin w-100 m-auto">
+
+    <form action="/login" method="post">
+
+        <h1 class="h3 mb-3 fw-normal">Sign in</h1>
 
         <span>${requestScope.message}</span>
 
@@ -21,10 +33,18 @@
             <input type="password" id="password" name="password" class="form-control">
         </div>
 
-        <div class="d-grid gap-2 col-6 mx-auto py-4">
-            <button type="submit" class="btn btn-primary">Login</button>
+        <div class="form-check text-start my-3">
+            <input class="form-check-input" type="checkbox" value="remember-me" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">Remember me</label>
         </div>
 
+        <button class="btn btn-primary w-100 py-2" type="submit">Sign in</button>
+
     </form>
+
+    </main>
+
+    <script src="http://localhost:8080/webjars/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
