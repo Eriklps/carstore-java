@@ -9,7 +9,7 @@
     <link href="/css/dashboard.css" rel="stylesheet">
     <link href="/css/style.css" rel="stylesheet">
 
-    <title>Dashboard | Dashboard</title>
+    <title>Car Store | Dashboard</title>
 </head>
 <body class="body">
 
