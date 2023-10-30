@@ -25,7 +25,7 @@
             </div>
 </header>
 
-  <div class="container-fluid">
+  <div class="container-fluid p-2">
 
     <div class="row">
 
