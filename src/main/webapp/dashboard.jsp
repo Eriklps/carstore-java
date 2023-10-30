@@ -20,8 +20,14 @@
     		</button>
     		<input class="form-control form-control-dark w-100 rounded-0 border-0" type="text" placeholder="Search" aria-label="Search">
     		<div class="navbar-nav">
+    		<c:if test="${sessionScope.loggedUser != null}">
     			<div class="nav-item text-nowrap">
-    				<a class="nav-link px-3" href="/logout">Sign out</a>
+    			<a class="nav-link px-3" href="/logout">Sign out</a>
+    	    </c:if>
+    	    <c:if test="${sessionScope.loggedUser == null}">
+                <div class="nav-item text-nowrap">
+                <a class="nav-link px-3" href="/login">Sign in</a>
+            </c:if>
             </div>
         </div>
   </header>
@@ -32,32 +38,32 @@
 
     <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-body sidebar collapse">
 
-    				<div class="position-sticky pt-3 sidebar-sticky">
+        <div class="position-sticky pt-3 sidebar-sticky">
 
-    					<ul class="nav flex-column">
-    						<li class="nav-item">
-    							<a class="nav-link" aria-current="page" href="#"><span data-feather="user" class="align-text-bottom"></span>
+    	    <ul class="nav flex-column">
+    		    <li class="nav-item">
+    			    <a class="nav-link" aria-current="page" href="#"><span data-feather="user" class="align-text-bottom"></span>
 
-    							 <c:if test="${sessionScope.loggedUser != null}">
-                                         <span>${sessionScope.loggedUser}</span>
-                                 </c:if>
+    				    <c:if test="${sessionScope.loggedUser != null}">
+                            <span>${sessionScope.loggedUser}</span>
+                        </c:if>
 
-    							</a>
-    						</li>
-    					</ul>
+    				</a>
+    			</li>
+    		</ul>
 
-    					<hr>
+    		<hr>
 
-    					<ul class="nav flex-column">
-    						<li class="nav-item">
-    							<a class="nav-link" aria-current="page" href="/find-all-cars"><span data-feather="home" class="align-text-bottom"></span> Home </a>
-    						</li>
-    						<li class="nav-item">
-    							<a class="nav-link" href="/"><span data-feather="file-text" class="align-text-bottom"></span> New Car</a>
-    						</li>
-    					</ul>
+    		<ul class="nav flex-column">
+    		    <li class="nav-item">
+    			    <a class="nav-link" aria-current="page" href="/find-all-cars"><span data-feather="home" class="align-text-bottom"></span>Home</a>
+    			</li>
+    			<li class="nav-item">
+    			    <a class="nav-link" href="/"><span data-feather="file-text" class="align-text-bottom"></span>New Car</a>
+    		    </li>
+    	    </ul>
 
-    				</div>
+    	</div>
 
     </nav>
 
@@ -101,8 +107,8 @@
   </div>
 
   <script src="http://localhost:8080/webjars/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
-  <script src="../js/feather.min.js"></script>
-  <script src="../js/dashboard.js"></script>
+  <script src="/js/feather.min.js"></script>
+  <script src="/js/dashboard.js"></script>
 
 </body>
 </html>
