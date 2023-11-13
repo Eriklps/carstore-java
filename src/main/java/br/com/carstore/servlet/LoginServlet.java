@@ -34,11 +34,11 @@ public class LoginServlet extends HttpServlet {
 
             req.getSession().setAttribute("loggedUser", username);
 
-            resp.sendRedirect("/find-all-cars");
+            resp.sendRedirect("/admin/find-all-cars");
 
         } else {
 
-            req.setAttribute("message", "Invalid credentials");
+            req.setAttribute("message", "Invalid credentials!");
 
             req.getRequestDispatcher("login.jsp").forward(req, resp);
 

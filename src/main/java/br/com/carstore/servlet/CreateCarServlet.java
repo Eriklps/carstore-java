@@ -46,7 +46,7 @@ public class CreateCarServlet extends HttpServlet {
         }
 
 
-        httpServletResponse.sendRedirect("/find-all-cars");
+        httpServletResponse.sendRedirect("/admin/find-all-cars");
 
     }
 

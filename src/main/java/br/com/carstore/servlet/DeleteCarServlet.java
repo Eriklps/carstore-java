@@ -18,7 +18,7 @@ public class DeleteCarServlet extends HttpServlet {
 
         new CarDao().deleteCarById(carId);
 
-        resp.sendRedirect("/find-all-cars");
+        resp.sendRedirect("/admin/find-all-cars");
 
     }
 
