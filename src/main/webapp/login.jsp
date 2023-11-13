@@ -47,7 +47,7 @@
 
     </main>
 
-    <script src="http://localhost:8080/webjars/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="http://localhost:8080/webjars/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>

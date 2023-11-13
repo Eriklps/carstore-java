@@ -1,8 +1,8 @@
 <!doctype html>
 <html data-bs-theme="light">
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+
 <head>
-	
+	<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="">
@@ -53,7 +53,7 @@
 					<div class="col">
 						<div class="card shadow-sm">
 							
-							<img src="${car.image}" alt="car image">
+							<img src="/img/${car.image}" alt="car image">
 	
 							<div class="card-body">
 								<p class="card-text">${car.name}</p>
@@ -82,7 +82,7 @@
 		</div>
 	</footer>
 
-	<script src="/webjars/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+	<script src="/webjars/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
