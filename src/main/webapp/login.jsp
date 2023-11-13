@@ -5,7 +5,7 @@
     <meta http-equiv="Content-type" content="text/html" charset=UTF-8>
     <link href="webjars/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
 
-    <link href="http://localhost:8080/webjars/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://localhost:8080/webjars/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="https://getbootstrap.com/docs/5.3/examples/sign-in/sign-in.css" rel="stylesheet">
