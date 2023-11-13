@@ -19,9 +19,7 @@
 
     <form action="/login" method="post">
 
-        <h1 class="h3 mb-3 fw-normal">Sign in</h1>
-
-
+        <h1 class="h3 mb-3 fw-normal text-center">Sign in</h1>
 
         <div class="form-floating">
             <input type="text" name="username" class="form-control" id="floatingInput" placeholder="Username">
