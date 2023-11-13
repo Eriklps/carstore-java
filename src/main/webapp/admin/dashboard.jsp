@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html data-bs-theme="light">
+<html data-bs-theme="">
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <head>
     <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>

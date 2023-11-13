@@ -1,4 +1,4 @@
-<html data-bs-theme="light">
+<html data-bs-theme="">
 
 <head>
     <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
