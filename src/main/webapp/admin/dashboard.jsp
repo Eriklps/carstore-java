@@ -4,10 +4,10 @@
 <head>
     <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
     <meta http-equiv="Content-type" content="text/html" charset=UTF-8>
-    <link href="webjars/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../webjars/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
 
-    <link href="/css/dashboard.css" rel="stylesheet">
-    <link href="/css/style.css" rel="stylesheet">
+    <link href="../css/dashboard.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
 
     <title>Car Store | Dashboard</title>
 </head>
@@ -54,10 +54,10 @@
 
     		<ul class="nav flex-column">
     		    <li class="nav-item">
-    			    <a class="nav-link" aria-current="page" href="/find-all-cars"><span data-feather="home" class="align-text-bottom"></span>Home</a>
+    			    <a class="nav-link" aria-current="page" href="/admin/find-all-cars"><span data-feather="home" class="align-text-bottom"></span>Home</a>
     			</li>
     			<li class="nav-item">
-    			    <a class="nav-link" href="/"><span data-feather="file-text" class="align-text-bottom"></span>New Car</a>
+    			    <a class="nav-link" href="/admin/"><span data-feather="file-text" class="align-text-bottom"></span>New Car</a>
     		    </li>
     	    </ul>
 
@@ -105,8 +105,8 @@
   </div>
 
   <script src="http://localhost:8080/webjars/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
-  <script src="/js/feather.min.js"></script>
-  <script src="/js/dashboard.js"></script>
+  <script src="../js/feather.min.js"></script>
+  <script src="../js/dashboard.js"></script>
 
 </body>
 </html>
