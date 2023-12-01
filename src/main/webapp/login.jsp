@@ -38,7 +38,7 @@
         <button class="btn btn-primary w-100 py-2" type="submit">Sign in</button>
 
         <div class="text-center my-3">
-        <span>${requestScope.message}</span>
+            <span>${requestScope.message}</span>
         </div>
 
     </form>
