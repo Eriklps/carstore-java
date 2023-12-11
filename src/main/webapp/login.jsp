@@ -18,6 +18,13 @@
 
     <main class="form-signin w-100 m-auto">
 
+    <c:if test="${hasMessage}">
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        <span>${requestScope.message}</span>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    </c:if>
+
     <form action="/login" method="post">
 
         <h1 class="h3 mb-3 fw-normal text-center">Sign in</h1>
@@ -37,13 +44,6 @@
         </div>
 
         <button class="btn btn-primary w-100 py-2" type="submit">Sign in</button>
-
-        <c:if test="${hasMessage}">
-            <div class="alert alert-danger alert-dismissible fade show" role="alert">
-                <span>${requestScope.message}</span>
-                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-            </div>
-        </c:if>
 
     </form>
 
